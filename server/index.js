@@ -19,6 +19,8 @@ const openai = new OpenAi({
   apiKey: process.env.OPENAI_API_KEY
 });
 
+app.get("/",(req, res) => res.send("Welcome to Bitrox Dental Backend!!") )
+
 app.use(express.static("public"));
 app.use(cors());
 
